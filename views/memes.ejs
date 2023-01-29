@@ -11,32 +11,8 @@
 
 <body class="position-relative" data-bs-spy="scroll">
   <%- include('./partials/navbar.ejs') %>
-    <section class="container">
-      <table class="table" id="table">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Size</th>
-            <th scope="col">Image</th>
-            <th scope="col">Options</th>
-          </tr>
-        </thead>
-        <tbody>
-
-          <tr>
-            <th scope="row">
-            </th>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <%- include('./partials/scripts.ejs') %>
+  <%- include('./partials/memes.ejs'), {data: data} %>
+  <%- include('./partials/scripts.ejs') %>
 </body>
 
 </html>

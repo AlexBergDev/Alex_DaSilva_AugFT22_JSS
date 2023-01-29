@@ -1,0 +1,49 @@
+<section class="container">
+
+  <div class="input-group mt-4 mb-3">
+    <input type="text" id="search-input" onkeyup="search()" class="form-control" placeholder="Search">
+    <button class="btn btn-primary">Search</button>
+  </div>
+
+  <table class="table" id="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Size</th>
+        <th scope="col">Image</th>
+        <th scope="col">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(function(meme){ %>
+      <tr id="<%=meme.id%>">
+        <th scope="row" class="data">
+          <%=meme.id%>
+        </th>
+        <td class="data">
+          <%=meme.name%>
+        </td>
+        <td>
+          <img src="<%=meme.url%>" style="width: 20%;">
+        </td>
+        <td class="data" style="display:none;">
+          <%=meme.url%>
+        </td>
+        <td class="data" style="display:none;">
+          <%=meme.width%>
+        </td>
+        <td class="data" style="display:none;">
+          <%=meme.height%>
+        </td>
+        <% if (!user) { %>
+        <% } %>
+        <% if (user) { %>
+        <td>
+          <input type="button" value="Details" class="btn btn-primary" onclick="detailsBtn()"></input>
+        </td>
+        <% } %>
+      </tr>
+      <% });%>
+    </tbody>
+  </table>
+</section>

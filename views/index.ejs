@@ -8,18 +8,20 @@
 
 <body class="position-relative" data-bs-spy="scroll">
   <%- include('./partials/navbar.ejs') %>
-    <header id="home">
-      <div class="container-fluid header-content">
-        <div class="row">
-          <div class="col">
-            <div class="content-box text-center text-light">
-              <h1>Meme Central</h1>
-            </div>
+  <header id="home">
+    <div class="container-fluid header-content">
+      <div class="row">
+        <div class="col">
+          <div class="content-box text-center text-light">
+            <a class="navbar-brand" href="/memes">
+              <img src="../../images/logo.png" width="120" alt="Meme central logo">
+            </a>
           </div>
         </div>
       </div>
-    </header>
-    <%- include('./partials/scripts.ejs') %>
+    </div>
+  </header>
+  <%- include('./partials/scripts.ejs') %>
 </body>
 
 </html>
