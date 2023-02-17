@@ -2,7 +2,7 @@
 
   <div class="input-group mt-4 mb-3">
     <input type="text" id="search-input" onkeyup="search()" class="form-control" placeholder="Search">
-    <button class="btn btn-primary">Search</button>
+    <button class="btn btn-outline-secondary">Search</button>
   </div>
 
   <table class="table" id="table">
@@ -24,7 +24,7 @@
           <%=meme.name%>
         </td>
         <td>
-          <img src="<%=meme.url%>" style="width: 20%;">
+          <img src="<%=meme.url%>"" style=" width: 10%;">
         </td>
         <td class="data" style="display:none;">
           <%=meme.url%>
@@ -39,7 +39,7 @@
         <% } %>
         <% if (user) { %>
         <td>
-          <input type="button" value="Details" class="btn btn-primary" onclick="detailsBtn()"></input>
+          <input type="button" value="Details" class="btn btn-outline-secondary" onclick="detailsBtn()"></input>
         </td>
         <% } %>
       </tr>

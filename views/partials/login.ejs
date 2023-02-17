@@ -1,4 +1,4 @@
-<section class="login" id="login">
+<section class="login container" id="login">
   <div class="p-5 text-center">
     <% if (!user) { %>
     <h1>Sign in</h1>
@@ -15,7 +15,6 @@
         <button type="submit">Sign in</button>
       </div>
     </form>
-    <h2>Warning: Only the first user (Josh) in the users.json file is able to login. I was not able to figure out why the rest of the users can not login.</h2>
     <% } %>
     <% if (user) { %>
     <div class="row">
